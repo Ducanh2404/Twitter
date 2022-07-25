@@ -1,0 +1,597 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    position: relative;
+}
+#menu-left{
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100%;
+}
+
+#menu-left .logo i{
+    padding: 0 12px ;
+    color:rgb(29, 155, 240);
+    font-size:28px;
+}
+#menu-left .menu .icon{
+    width: 28px;
+    height: 28px;
+}
+#menu-left .menu li{
+    list-style: none;
+    padding:12px;
+}
+#menu-left .menu ul{
+    padding:0px;
+}
+#menu-left .menu a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+#menu-left .menu .label{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 16px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+#menu-left .menu .label.active{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 16px;
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+#menu-left .tweet{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 700;
+}
+#menu-left .details{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:0;
+}
+#menu-left .details:hover{
+    background-color:rgba(15, 20, 25, 0.1);
+}
+#menu-left .avatar img{
+    border-radius: 50% ;
+}
+#menu-left .name{
+    width: 126px;
+    margin : 0 12px;
+    text-align: start;
+    line-height: 18px;
+    font-family: inherit;
+}
+#menu-left .name1{
+    font-weight: 500;
+}
+#menu-left .details .name2{
+    width: 126px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+#menu-left .details .more{
+    width: 20px;
+    height: 20px;
+}
+.col-md-6{
+    padding: 0!important;
+    border-left:solid 1px rgba(5, 5, 5, 0.03);
+    border-right:solid 1px rgba(0, 0, 0, 0.03);
+}
+#main-menu{
+    position: relative;
+
+}
+#main-menu .top-main{
+    display: flex;
+    height: 53px;
+    width: 100%;
+    align-items: center;
+    padding:0px 16px;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    background-color: white;
+    border-left:solid 1px rgba(0, 0, 0, 0.03);
+    border-right:solid 1px rgba(0, 0, 0, 0.03);
+}
+#main-menu .back{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 33px;
+}
+#main-menu .name {
+    line-height: 20px;
+}
+#main-menu .name1{
+    font-size: 20px;
+    font-weight: 700;
+}
+#main-menu .name .tweets{
+    font-size: 15px;
+}
+#main-menu .wall{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(207, 217, 222);
+}
+#main-menu .avatar{
+    position: relative;
+}
+#main-menu .avatar .image{
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border:solid 4px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-80px;
+    left:16px;
+}
+#main-menu .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0 0 16px;
+    padding:12px 16px 0;
+}
+#main-menu .edit{
+    height: 63px;
+    display: flex;
+    justify-content: end;
+}
+#main-menu .edit .btn{
+    height: 36px;
+    border-color: rgb(207, 217, 222);
+    font-weight: 500;
+    font-family: inherit;
+}
+#main-menu .intro .name{
+    margin-bottom: 12px;
+}
+
+#main-menu .intro .name1{
+    font-weight: 700;
+    font-family: inherit;
+}
+#main-menu .intro .date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#main-menu .intro .date .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+#main-menu .intro .date .icon svg{
+    fill:rgb(83, 100, 113);
+}
+#main-menu .intro .follow {
+    display: flex;
+}
+#main-menu .intro .follow a:hover{
+    color: black;
+    text-decoration: underline!important;
+}
+#main-menu .lists ul{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding:0;
+    margin:0;
+    border-bottom:solid 1px rgb(207, 217, 222);
+}
+#main-menu .lists a{
+    color:rgb(83, 100, 113);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:16px;
+}
+#main-menu .lists a:hover{
+    background-color: rgba(15, 20, 25, 0.1);
+}
+#main-menu .lists ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+#main-menu .lists .underline{
+    background-color: rgb(29, 155, 240);
+    height: 4px;
+    width: 50%;
+}
+#main-menu .lists .active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main-menu .news-feed{
+    min-height: 1275px;
+}
+#main-menu .news-feed .label{
+    font-weight: 700;
+    font-size: 20px;
+    font-family:inherit;
+    padding:12px 16px;
+}
+#main-menu .news-feed .user{
+    padding :12px 16px;
+    display: flex;
+    width: 100%;
+}
+#main-menu .news-feed .user img{
+    border-radius: 50%;
+    margin-right: 12px;
+}
+#main-menu .news-feed .user .details{
+    width: 100%;
+}
+#main-menu .news-feed .user .detail1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#main-menu .news-feed .user .detail1 .verify{
+    width: 17px;
+    display: flex;
+    margin-left: 2px;
+}
+#main-menu .news-feed .user .detail1 .verify svg{
+    fill :rgb(29, 155, 240);
+}
+#main-menu .news-feed .user .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 77px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+#main-menu .news-feed .user .detail2{
+    padding-top: 4px;
+    font-size: 15px;
+
+}
+#main-menu .news-feed .user .detail2 a{
+    color:rgb(29, 155, 240);
+    text-decoration: none;
+}
+#main-menu .show-more{
+    padding:16px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom:solid 1px rgba(0, 0, 0, 0.03);
+}
+#main-menu .show-more:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+#main-menu .topicsToFollow{
+    line-height: 24px;
+}
+#main-menu .topicsToFollow .label1{
+    font-weight: 700;
+}
+#main-menu .topicsToFollow .label2{
+    font-size: 13px;
+    font-weight: 400;
+}
+#main-menu .topics{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding-left: 12px;
+}
+#main-menu .topics .contain{
+    display: flex;
+    flex-direction: column;
+    transition:0.3s ease-out 0s;
+}
+#main-menu .topics .filter1.two{
+    width: 228px;
+}
+#main-menu .topics .filter1.three{
+    width: 240px;
+}
+#main-menu .topics .filter1.four{
+    width: 285px;
+}
+#main-menu .topics .filter1.five{
+    width: 257px;
+}
+#main-menu .topics .filter1.six{
+    width: 294px;
+}
+#main-menu .topics .filter1{
+    width: 267px;
+    height: 40px;
+    display: flex;
+    border:1px solid rgb(207, 217, 222);
+    border-radius: 50rem;
+    margin-bottom: 5px;
+    margin:4px;
+    cursor: pointer;
+}
+#main-menu .topics .filter{
+    width: 100%;
+    display: flex;
+    padding:0 12px 0 16px;
+    align-items: center;
+}
+#main-menu .topics .filter .label{
+    width: 100%;
+    font-size: 15px;
+    padding:0;
+}
+#main-menu .topics .filter .add{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-size: 20px;
+    color:rgb(29, 155, 240);
+}
+#main-menu .topics .filter1 .hide{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-size: 18px;
+    color:rgb(185, 202, 211);
+    padding:0 12px;
+}
+#main-menu .topics:hover #btn-previous{
+    opacity: 1;
+}
+#main-menu .topics:hover #btn-next{
+    opacity: 1;
+}
+#btn-previous{
+    width: 36px;
+    height: 36px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 30px;
+    top:40%;
+    left:10px;
+    cursor: pointer;
+    background-color: rgba(39, 44, 48, 0.75);
+    color:rgb(207, 217, 222);
+    border-radius: 50%;
+    opacity: 0;
+    transition:0.3s ease-out 0s;
+    
+}
+#btn-next{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
+    right: 0;
+    top:40%;
+    background-color: rgba(39, 44, 48, 0.75);
+    color:rgb(207, 217, 222);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s ease-out 0s;
+}
+#menu-right{
+    margin-left:20px;
+    position: relative;
+    height: 100%;
+}
+#menu-right .search{
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    z-index:99;
+}
+#menu-right .search-bar{
+    display: flex;
+    align-items: center;
+    padding:12px;
+    margin-bottom: 16px;
+    margin-top:5px;
+    border-radius:25px;
+    background-color: rgb(239, 243, 244);
+}
+#menu-right .search-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+#menu-right .search-bar input{
+    width: 80%;
+    height: 18px;
+    padding:12px;
+    border: none;
+    background-color: inherit;
+}
+#menu-right .search-bar input:focus{
+    outline: none;
+}
+#menu-right .search-bar:focus-within{
+    border:1px solid rgb(29, 155, 240)
+}
+#menu-right .recommend {
+    margin-bottom: 16px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 16px;
+}
+#menu-right .recommend .label{
+    font-weight: 700;
+    padding:12px 16px;
+    font-size: 20px;
+}
+#menu-right .recommend .user{
+    padding :12px 16px;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+}
+#menu-right .recommend .user img{
+    border-radius: 50%;
+    margin-right: 12px;
+}
+#menu-right .recommend .user .details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu-right .recommend .user .details .verify{
+    width: 17px;
+    display: flex;
+    margin-left: 2px;
+}
+#menu-right .recommend .user .details .verify svg{
+    fill:rgb(29, 155, 240);
+}
+#menu-right .recommend .user .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 77px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+#menu-right .show-more{
+    padding:16px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom:solid 1px rgba(0, 0, 0, 0.03);
+}
+#menu-right .show-more:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.user{
+    cursor: pointer;
+}
+.user:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+#menu-right .trending{
+    border-radius: 16px;
+    background-color: rgb(247, 249, 249);
+    margin-bottom: 16px;
+}
+#menu-right .trending .label {
+    display: flex;
+    justify-content: space-between;
+    padding:12px 16px
+}
+#menu-right .trending .setting{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#menu-right .trending .setting:hover{
+    background-color:rgb(15, 20, 25,0.1);
+}
+#menu-right .trending .setting .icon{
+    width: 20px;
+}
+#menu-right .trending .trends .trend{
+    padding:12px 16px;
+    position: relative;
+}
+#menu-right .trending .trends .trend:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+#menu-right .trending .trends .more{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right:15px;
+    top:5px;
+    border-radius:50% ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-right .trending .trends .more:hover{
+    background-color: rgba(29, 155, 240, 0.1);
+}
+#menu-right .trending .trends .icon{
+    width: 19px;
+}
+#menu-right .policy ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    padding:0 16px;
+}
+#menu-right .policy li{
+    list-style: none;
+    padding-right: 12px;
+}
+#menu-right .policy a{
+    text-decoration: none;
+    color:rgb(83, 100, 113);
+}
+#menu-right .policy a:hover{
+    text-decoration: underline!important;
+}
